@@ -1,0 +1,326 @@
+:root {
+    --primary-color: #309230;
+    --text-color: #1ef230;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #1e1a1a;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .player {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .player .icon-pause {
+    display: none;
+  }
+  
+  .player.playing .icon-pause {
+    display: none;
+  }
+  
+  .player.playing .icon-play {
+    display: none;
+  }
+  
+  .dashboard {
+    padding: 16px 16px 14px;
+    background-color: #312e2e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 480px;
+    border-bottom: 1px solid #312e2e;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  header h4 {
+    color: var(--primary-color);
+    font-size: 12px;
+  }
+  
+  header h2 {
+    color: var(--text-color);
+    font-size: 20px;
+  }
+  
+  /* CD */
+  .cd {
+    display: flex;
+    margin: auto;
+    width: 150px;
+  }
+  
+  .cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #ca1212;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+  .cd {
+    margin-bottom: -15px; /* Tăng khoảng cách với playlist */
+}
+  
+  /* CONTROL */
+  .control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0 8px 0;
+  }
+  
+  .btn-repeat.active i {
+    color: #1ef230 !important; /* Màu sáng hơn */
+  }
+  .control .btn {
+    color: #309230;
+    padding: 18px;
+    font-size: 18px;
+  }
+  
+  .control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+  }
+  
+  .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3c9c9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  /* PLAYLIST */
+  .playlist {
+    margin-top: 408px;
+    padding: 12px;
+  }
+  
+  .song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    background-color: #312e2e;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .song.active {
+    background-color: var(--primary-color);
+  }
+  
+  .song:active {
+    opacity: 0.8;
+  }
+  
+  .song.active .option,
+  .song.active .author,
+  .song.active .title {
+    color: #ffffff;
+  }
+  
+  .song .thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 8px;
+  }
+  
+  .song .body {
+    flex: 1;
+    padding: 0 16px;
+  }
+  
+  .song .title {
+    font-size: 18px;
+    color: #fff8f8;
+  }
+  
+  .song .author {
+    font-size: 12px;
+    color: #fff8f8;
+  }
+  
+  .song .option {
+    padding: 16px 8px;
+    color: #fbfbfb;
+    font-size: 18px;
+  }
+
+  /* Button */
+  .btn-toggle-play i {
+    font-size: 20px;
+  }
+  
+  .btn-toggle-play.playing i::before {
+    content: "\f04c"; /* FontAwesome Pause Icon */
+  }
+  
+  .btn-toggle-play i::before {
+    content: "\f04b"; /* FontAwesome Play Icon */
+  }
+
+.btn-toggle-play:hover,
+.btn-prev:hover,
+.btn-next:hover,
+.btn-random:hover,
+.btn-repeat:hover,
+.option {
+    cursor: pointer;
+  }
+.option:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+.btn-toggle-play i:active, 
+.btn-prev i:active, 
+.btn-next i:active, 
+.btn-random i:active {
+    color: #dcf05a; /* Đổi màu icon thành vàng */
+    transform: scale(1.2); /* Phóng to icon khi nhấn */
+}
+
+/* Thời gian của bài hát */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#current-time, #duration {
+    font-size: 14px;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+}
+/* Âm lượng */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.time-volume {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Giảm khoảng cách giữa thời gian và biểu tượng âm lượng */
+}
+
+/* Hiệu ứng hover cho icon âm lượng */
+.volume-icon {
+    font-size: 18px; /* Điều chỉnh kích thước icon */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Đổi màu khi hover vào icon loa */
+.volume-icon:hover {
+    color: #eb5d9b; /* Màu cam đỏ, bạn có thể đổi thành màu yêu thích */
+}
+
+/* Căn chỉnh biểu tượng loa và thanh âm lượng */
+.volume-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Ẩn thanh chỉnh âm lượng mặc định */
+.volume-slider {
+    position: absolute;
+    left: 30px;
+    width: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Hiện thanh chỉnh âm lượng khi trỏ chuột vào icon loa */
+.volume-wrapper:hover .volume-slider {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Chỉnh màu cho thanh phát nhạc */
+
+/* input[type="range"] {
+    width: 100%;
+    position: relative; /* Không để absolute */
+    transform: none; /* Đảm bảo không bị dịch chuyển */
+} */
+
+.progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, #1ef230 0%, #d3c9c9 0%); /* Chia màu */
+    border-radius: 3px;
+    outline: none;
+    transition: background 0.1s;
+}
+
+/* Tùy chỉnh nút kéo */
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #1ef230;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
