@@ -38,54 +38,54 @@ const app = {
     {
       name: "Lần cuối",
       singer: "Ngọt",
-      path: "song/lần-cuối-đi-bên-em-xót-xa-người-ơi.mp3",
+      path: "songs/lần-cuối-đi-bên-em-xót-xa-người-ơi.mp3",
       image: "https://i1.sndcdn.com/artworks-000605743393-0030j2-t500x500.jpg"
     },
     {
       name: "Nhất bái thiên địa",
       singer: "The Flob, Chin",
-      path: "song/nhất-bái-thiên-địa.mp3",
+      path: "songs/nhất-bái-thiên-địa.mp3",
       image:
         "https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/cover/b/4/a/4/b4a4cfdb468a4d095f6fb503d8534cd5.jpg"
     },
     {
       name: "Day 1",
       singer: "Red Velvet",
-      path:"song/Day 1.mp3",
+      path:"songs/Day 1.mp3",
       image: "https://t2.genius.com/unsafe/425x425/https%3A%2F%2Fimages.genius.com%2F58ce9b4ef403e95fc90478a7a01ce2c9.243x243x1.jpg"
     },
     {
       name: "Black",
       singer: "G-Dragon, ft. Jennie",
-      path: "song/black.mp3",
+      path: "songs/black.mp3",
       image:
         "https://images.genius.com/c7e56c922dc553bebcc4c3c3881e6eed.554x554x1.jpg"
     },
     {
       name: "あの夢をなぞって",
       singer: "Yoasobi",
-      path: "song/tracing a dream.mp3",
+      path: "songs/tracing a dream.mp3",
       image:
         "https://upload.wikimedia.org/wikipedia/en/2/2d/Ano_Yume_o_Nazotte_cover_art.jpg"
     },
     {
       name: "Ghost in a flower",
       singer: "Yorushika",
-      path:"song/ghost in a flower.mp3",
+      path:"songs/ghost in a flower.mp3",
       image:
         "https://upload.wikimedia.org/wikipedia/en/9/9a/Yorushika_-_Ghost_in_a_Flower.png"
     },
     {
       name: "Bohemian Rhapsody",
       singer: "Queen",
-      path: "song/Bohemian Rhapsody.mp3",
+      path: "songs/Bohemian Rhapsody.mp3",
       image:
         "https://powerpop.blog/wp-content/uploads/2020/08/queen-bohemian-rhapsody.jpg?w=500"
     },
     {
         name: "Back to December",
         singer: "Taylor Swift",
-        path: "song/Back To December - Taylor Swift(Audio).mp3",
+        path: "songs/Back To December - Taylor Swift(Audio).mp3",
         image:
           "https://redcat.ca/cdn/shop/products/NzctNTY1Mi5qcGVn.jpg?v=1691105054"
       }
