@@ -51,7 +51,7 @@ const app = {
     {
       name: "Day 1",
       singer: "Red Velvet",
-      path:"songs/Day 1.mp3",
+      path:"songs/day-1.mp3",
       image: "https://t2.genius.com/unsafe/425x425/https%3A%2F%2Fimages.genius.com%2F58ce9b4ef403e95fc90478a7a01ce2c9.243x243x1.jpg"
     },
     {
@@ -71,21 +71,21 @@ const app = {
     {
       name: "Ghost in a flower",
       singer: "Yorushika",
-      path:"songs/ghost in a flower.mp3",
+      path:"songs/ghost-in-a-flower.mp3",
       image:
         "https://upload.wikimedia.org/wikipedia/en/9/9a/Yorushika_-_Ghost_in_a_Flower.png"
     },
     {
       name: "Bohemian Rhapsody",
       singer: "Queen",
-      path: "songs/Bohemian Rhapsody.mp3",
+      path: "songs/bohemian-rhapsody.mp3",
       image:
         "https://powerpop.blog/wp-content/uploads/2020/08/queen-bohemian-rhapsody.jpg?w=500"
     },
     {
         name: "Back to December",
         singer: "Taylor Swift",
-        path: "songs/Back To December - Taylor Swift(Audio).mp3",
+        path: "songs/back-to-december - Taylor Swift(Audio).mp3",
         image:
           "https://redcat.ca/cdn/shop/products/NzctNTY1Mi5qcGVn.jpg?v=1691105054"
       }
